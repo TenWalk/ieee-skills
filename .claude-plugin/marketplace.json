@@ -1,0 +1,21 @@
+{
+  "name": "ieee-skills",
+  "version": "0.4.0",
+  "description": "Bilingual (Chinese-English) skills for writing IEEE communications-journal papers (JSAC, TWC, TC/TCOM, WCL, CL) — target-journal routing, manuscript drafting, language polishing, IEEE citation and IEEEtran formatting, simulation and empirical evidence design, publication figures, reviewer responses, and WCL/CL letters.",
+  "owner": {
+    "name": "WT"
+  },
+  "plugins": [
+    {
+      "name": "ieee-skills",
+      "version": "0.4.0",
+      "source": "./",
+      "description": "A collection of Claude skills for producing IEEE communications-journal manuscripts (JSAC, TWC, TC/TCOM, WCL, CL). Covers target-journal routing, section drafting and argument restructuring (system model incl. emerging paradigms RIS/NOMA/ISAC/near-field/cell-free, problem formulation, proposed algorithm or learning-based network, performance analysis with theorems/proofs), sentence-level polishing to IEEE style, numbered citation and IEEEtran formatting, simulation design with benchmark schemes, Monte-Carlo validation, empirical/ray-tracing/testbed evidence, learning-based and ISAC dual-metric evaluation, publication-grade result figures (BER-vs-SNR, convergence, NMSE, rate–CRB tradeoff), point-by-point reviewer responses, and WCL/CL letters. Bilingual: converts Chinese author notes into submission-ready English.",
+      "author": {
+        "name": "WT"
+      },
+      "keywords": ["ieee", "ieeetran", "communications", "wireless", "jsac", "twc", "wcl", "academic", "manuscript", "writing", "polishing", "citation", "figure", "simulation", "rebuttal", "transactions", "letter", "isac", "ris", "noma", "deep-learning", "deep-unfolding", "near-field"],
+      "category": "academic"
+    }
+  ]
+}
