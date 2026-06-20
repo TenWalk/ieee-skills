@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Search"
+  short_description: "Search and verify IEEE communications literature."
+  default_prompt: "Use $ieee-search to search, verify, and organize IEEE communications references for my manuscript."
+policy:
+  allow_implicit_invocation: true

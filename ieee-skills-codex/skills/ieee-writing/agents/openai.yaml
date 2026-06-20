@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Writing"
+  short_description: "Draft IEEE communications manuscripts."
+  default_prompt: "Use $ieee-writing to draft or restructure an IEEE communications manuscript section."
+policy:
+  allow_implicit_invocation: true

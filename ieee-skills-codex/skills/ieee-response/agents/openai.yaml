@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Response"
+  short_description: "Draft IEEE reviewer responses."
+  default_prompt: "Use $ieee-response to draft a point-by-point IEEE reviewer response letter."
+policy:
+  allow_implicit_invocation: true

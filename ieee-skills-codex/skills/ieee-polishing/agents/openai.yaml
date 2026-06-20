@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Polishing"
+  short_description: "Polish IEEE manuscript prose."
+  default_prompt: "Use $ieee-polishing to polish this text into IEEE communications-journal style."
+policy:
+  allow_implicit_invocation: true

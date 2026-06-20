@@ -5,6 +5,16 @@ papers — targeted at **JSAC, TWC, TC/TCOM, WCL, and CL** — and applicable to
 generally. Each `skills/ieee-*` directory is one installable unit centred on a `SKILL.md`. Copy the
 whole folder, not only `SKILL.md`, because most skills depend on their `references/` files.
 
+This repository now contains two adapted packages:
+
+| Package | Path | Use it for |
+|---|---|---|
+| Claude / Cowork | repository root (`skills/`, `.claude-plugin/`) | Claude Code / Cowork plugin installation |
+| Codex | [`ieee-skills-codex/`](ieee-skills-codex/) | Codex plugin or direct Codex skill installation |
+
+Both packages contain the same 11 IEEE skill bodies and references. The Codex package additionally
+includes `agents/openai.yaml` files and `.codex-plugin/plugin.json` metadata.
+
 The design follows four ideas borrowed from mature skill collections and adapted to IEEE:
 
 1. **Progressive disclosure** — a lean `SKILL.md` routes to detailed `references/*.md` only
@@ -32,8 +42,21 @@ The design follows four ideas borrowed from mature skill collections and adapted
 | [`ieee-figure`](skills/ieee-figure/README.md) | Publication-grade result figures sized for IEEE columns (vector output, correct fonts) | "IEEE figure", "result plot", "publication figure", "结果图", "画图" |
 | [`ieee-response`](skills/ieee-response/README.md) | Point-by-point reviewer response letters and cover letters | "response to reviewers", "rebuttal", "cover letter", "审稿回复", "回复审稿人" |
 | [`ieee-letter`](skills/ieee-letter/README.md) | WCL/CL letters: single contribution, page budget, compression, EDICS | "WCL letter", "CL letter", "5-page letter", "投WCL", "压缩成letter", "通信快报" |
+| [`ieee-methods`](skills/ieee-methods/README.md) | Reproducible methods details: notation, parameter tables, algorithm boxes, complexity | "methods", "reproducibility", "notation table", "complexity", "复现性", "复杂度" |
+| [`ieee-cover`](skills/ieee-cover/README.md) | IEEE cover letters, editor-facing significance and journal-fit framing | "cover letter", "submission letter", "special issue fit", "投稿信" |
+| [`ieee-search`](skills/ieee-search/README.md) | Literature search, DOI verification, BibTeX, related-work matrices, novelty checks | "find papers", "latest IEEE papers", "verify DOI", "查文献", "补参考文献" |
+| [`ieee-latex`](skills/ieee-latex/README.md) | IEEEtran compile/debug workflow, BibTeX, undefined refs, overfull boxes, final PDF checks | "compile IEEEtran", "overfull hbox", "BibTeX error", "latex编译" |
 
 ## Installation
+
+### Codex
+
+Use the Codex-adapted package in [`ieee-skills-codex/`](ieee-skills-codex/). For direct local
+installation, copy the Codex package's skill folders into `~/.codex/skills/` and restart Codex:
+
+```bash
+cp -R ieee-skills-codex/skills/ieee-* ~/.codex/skills/
+```
 
 ### Claude Code / Cowork (plugin marketplace)
 
@@ -51,7 +74,11 @@ e.g. `~/.claude/skills/` or `~/.codex/skills/`, then restart the agent.
 ## Suggested workflow across skills
 
 ```
+ieee-search       find and verify the prior work before claims harden
+   ↓
 ieee-writing      draft the argument and sections
+   ↓
+ieee-methods      make methods, notation, algorithms, and complexity reproducible
    ↓
 ieee-experiments  make the evidence (benchmark schemes, comms metrics, Monte-Carlo) match the claims
    ↓
@@ -60,6 +87,10 @@ ieee-figure       turn key results into IEEE-sized figures
 ieee-polishing    bring every sentence to IEEE style and US English
    ↓
 ieee-citation     format references and Index Terms for IEEEtran
+   ↓
+ieee-latex        compile and debug the IEEEtran manuscript
+   ↓
+ieee-cover        frame the submission for the editor
    ↓
 ieee-response     after review, answer every comment point by point
 ```
@@ -88,12 +119,3 @@ above.
    `README.md`; add `references/*.md` for anything that would push `SKILL.md` past ~400 lines.
 2. Add a row to the Skill index table above.
 3. Keep the SKILL.md a *router*: a short core plus a "When to open extra files" table.
-
-## Candidate skills (not yet built)
-
-| Candidate | Scope |
-|-----------|-------|
-| `ieee-methods` | Reproducibility-checklist Methods writing, notation tables, complexity statements |
-| `ieee-cover` | Stand-alone cover-letter and significance-framing assistant |
-| `ieee-search` | Multi-source literature search and DOI verification with an MCP backend |
-| `ieee-latex` | Full IEEEtran build, BibTeX troubleshooting, overfull-hbox and `??` reference checks |

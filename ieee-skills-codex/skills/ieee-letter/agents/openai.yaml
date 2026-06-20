@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Letter"
+  short_description: "Write concise WCL and CL letters."
+  default_prompt: "Use $ieee-letter to plan or compress this work into a WCL/CL letter."
+policy:
+  allow_implicit_invocation: true

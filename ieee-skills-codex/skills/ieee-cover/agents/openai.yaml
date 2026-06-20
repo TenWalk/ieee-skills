@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Cover"
+  short_description: "Draft IEEE submission cover letters."
+  default_prompt: "Use $ieee-cover to draft an IEEE cover letter and editor-facing significance statement."
+policy:
+  allow_implicit_invocation: true

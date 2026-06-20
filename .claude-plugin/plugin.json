@@ -1,10 +1,12 @@
 {
   "name": "ieee-skills",
-  "version": "0.4.0",
-  "description": "Bilingual skills for writing IEEE communications-journal papers (JSAC, TWC, TC/TCOM, WCL, CL): drafting with target-journal routing, learning-based and emerging-paradigm system models, polishing, IEEE citation/IEEEtran formatting, simulation and empirical evidence design, publication figures, reviewer responses, and WCL/CL letters.",
+  "version": "0.5.0",
+  "description": "Bilingual skills for writing IEEE communications-journal papers (JSAC, TWC, TC/TCOM, WCL, CL): literature search with DOI/BibTeX verification, drafting with target-journal routing, learning-based and emerging-paradigm system models, reproducible methods, language polishing, IEEE citation/IEEEtran formatting, simulation and empirical evidence design, publication figures, IEEEtran compile/debug, submission cover letters, reviewer responses, and WCL/CL letters.",
   "author": {
     "name": "WT"
   },
-  "keywords": ["ieee", "ieeetran", "communications", "wireless", "academic", "manuscript", "writing", "citation", "figure", "simulation", "rebuttal", "letter", "isac", "ris", "noma", "deep-learning", "deep-unfolding"],
+  "repository": "https://github.com/TenWalk/ieee-skills",
+  "license": "MIT",
+  "keywords": ["ieee", "ieeetran", "communications", "wireless", "academic", "manuscript", "writing", "literature-search", "bibtex", "citation", "figure", "simulation", "latex", "rebuttal", "letter", "isac", "ris", "noma", "near-field", "deep-learning", "deep-unfolding"],
   "category": "academic"
 }

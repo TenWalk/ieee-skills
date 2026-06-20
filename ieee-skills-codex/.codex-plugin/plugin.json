@@ -1,0 +1,38 @@
+{
+  "name": "ieee-skills-codex",
+  "version": "0.5.0",
+  "description": "Codex-ready IEEE communications writing, search, LaTeX, and submission skills for JSAC, TWC, TCOM, WCL, and CL manuscripts.",
+  "author": {
+    "name": "WT"
+  },
+  "repository": "https://github.com/TenWalk/ieee-skills",
+  "license": "MIT",
+  "keywords": [
+    "ieee",
+    "ieeetran",
+    "communications",
+    "wireless",
+    "academic-writing",
+    "codex-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "IEEE Skills",
+    "shortDescription": "IEEE communications manuscript skills.",
+    "longDescription": "Codex-ready skills for searching, drafting, polishing, citing, plotting, evaluating, compiling, submitting, and revising IEEE communications-journal manuscripts for JSAC, TWC, TCOM, WCL, and CL.",
+    "developerName": "WT",
+    "category": "Education",
+    "capabilities": [
+      "Write",
+      "Research",
+      "Analysis"
+    ],
+    "defaultPrompt": [
+      "Use $ieee-writing to draft an IEEE introduction.",
+      "Use $ieee-experiments to audit my simulation plan.",
+      "Use $ieee-letter to compress this into a WCL/CL letter.",
+      "Use $ieee-search to verify related work and BibTeX.",
+      "Use $ieee-latex to compile and diagnose my IEEEtran manuscript."
+    ]
+  }
+}

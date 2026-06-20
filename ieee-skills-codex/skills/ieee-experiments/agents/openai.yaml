@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Experiments"
+  short_description: "Design IEEE communications experiments."
+  default_prompt: "Use $ieee-experiments to audit whether my simulation plan supports the paper claims."
+policy:
+  allow_implicit_invocation: true

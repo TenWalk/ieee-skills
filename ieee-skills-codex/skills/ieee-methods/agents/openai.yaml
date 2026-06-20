@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Methods"
+  short_description: "Write IEEE methods and reproducibility details."
+  default_prompt: "Use $ieee-methods to write or audit the Methods, notation, reproducibility, and complexity details of my IEEE communications paper."
+policy:
+  allow_implicit_invocation: true

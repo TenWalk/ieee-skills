@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Figure"
+  short_description: "Create IEEE publication figures."
+  default_prompt: "Use $ieee-figure to prepare an IEEE-ready communications result figure."
+policy:
+  allow_implicit_invocation: true

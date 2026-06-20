@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE LaTeX"
+  short_description: "Compile and debug IEEEtran manuscripts."
+  default_prompt: "Use $ieee-latex to compile, diagnose, and fix my IEEEtran LaTeX manuscript."
+policy:
+  allow_implicit_invocation: true

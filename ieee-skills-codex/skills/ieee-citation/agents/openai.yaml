@@ -1,0 +1,6 @@
+interface:
+  display_name: "IEEE Citation"
+  short_description: "Format IEEE citations and BibTeX."
+  default_prompt: "Use $ieee-citation to format these references and in-text citations for IEEEtran."
+policy:
+  allow_implicit_invocation: true
